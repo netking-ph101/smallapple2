@@ -45,7 +45,11 @@
 
     <!-- ================================================== -->
 
-   
+    <!-- <script src="/assets/js/modernizr.js"></script> -->
+    
+    <script src="/assets/js/cart/simpleCart.js"></script>
+    <script async src="/assets/js/cart/main.js"></script>
+    
 
     
     <script src="/assets/js/3f950a1575.js" crossorigin="anonymous"></script>
@@ -174,7 +178,7 @@
     <div class="container">
       
       <a class="navbar-brand d-lg-none " href="/index.html">
-        <img src="/assets/images/main-logo.png" class="logo" >
+        <img src="/assets/images/main-logo.png" class="logo">
       </a>
     
     
@@ -240,11 +244,6 @@
 
             <ul class="list-unstyled d-lg-flex justify-content-md-between align-items-center">
 
-              <li class="nav-item">
-                <a class="nav-link ms-0" href="https://traiwan.com/hotel/place-164629aedae82f4.html">線上訂房</a>
-              </li>
-             
-
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle ms-0" data-bs-toggle="dropdown" href="#" role="button"
                   aria-expanded="false">旅遊資訊<svg class="bi" width="18" height="18">
@@ -294,7 +293,12 @@
         </div>
       </div>
 
-     
+        <!-- 在大屏幕上显示购物车图标 -->
+        <a id="cart-menu" class="navbar-brand  d-lg-block me-0" href="/cart.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg> (<span class="simpleCart_quantity"></span>)
+        </a>
     </div>
   </nav>
 </header>
@@ -641,6 +645,7 @@
 <script type="text/javascript" src="/assets/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/assets/js/plugins.js"></script>
 <script type="text/javascript" src="/assets/js/script.js"></script>
+
 
 
 

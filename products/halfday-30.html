@@ -61,7 +61,11 @@
 
     <!-- ================================================== -->
 
-   
+    <!-- <script src="/assets/js/modernizr.js"></script> -->
+    
+    <script src="/assets/js/cart/simpleCart.js"></script>
+    <script async src="/assets/js/cart/main.js"></script>
+    
 
     
     <script src="/assets/js/3f950a1575.js" crossorigin="anonymous"></script>
@@ -190,7 +194,7 @@
     <div class="container">
       
       <a class="navbar-brand d-lg-none " href="/index.html">
-        <img src="/assets/images/main-logo.png" class="logo" >
+        <img src="/assets/images/main-logo.png" class="logo">
       </a>
     
     
@@ -256,11 +260,6 @@
 
             <ul class="list-unstyled d-lg-flex justify-content-md-between align-items-center">
 
-              <li class="nav-item">
-                <a class="nav-link ms-0" href="https://traiwan.com/hotel/place-164629aedae82f4.html">線上訂房</a>
-              </li>
-             
-
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle ms-0" data-bs-toggle="dropdown" href="#" role="button"
                   aria-expanded="false">旅遊資訊<svg class="bi" width="18" height="18">
@@ -310,7 +309,12 @@
         </div>
       </div>
 
-     
+        <!-- 在大屏幕上显示购物车图标 -->
+        <a id="cart-menu" class="navbar-brand  d-lg-block me-0" href="/cart.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg> (<span class="simpleCart_quantity"></span>)
+        </a>
     </div>
   </nav>
 </header>
@@ -446,7 +450,7 @@
               <h4 class="fw-bold">活動摘要</h4>
               <ul class="fa-ul">
                 
-                <li class="mb-3"><i class="fa-li fa fa-calendar-alt fa-lg"></i>"約4月1日－10中旬營業
+                <li class="mb-3"><i class="fa-li fa fa-calendar-alt fa-lg"></i>約4月1日－10中旬營業
 </li>
                 
                 
@@ -478,7 +482,7 @@
 </li>
                 
                 
-                <li class="mb-3"><i class="fa-li fa-regular fa-bell fa-lg"></i>前一天專人會透過line通知具体出發時間(視天氣調整)"</li>
+                <li class="mb-3"><i class="fa-li fa-regular fa-bell fa-lg"></i>前一天專人會透過line通知具体出發時間(視天氣調整)</li>
                 
               </ul>
 
@@ -497,13 +501,15 @@
                 <li class="mb-3 d-flex justify-content-between"><i
                     class="fa-li fa-solid fa-dice-one fa-lg"></i>
 
+夕遊海皇海牧+夜釣
 
                   
                   
                 
                 
                 
-                  <span>夕遊海皇海牧+夜釣
+                  <span>NT$690
+
 </span>
                   
                   
@@ -512,15 +518,16 @@
                 
 
                 <li class="mb-3 d-flex justify-content-between"><i
-                    class="fa-li fa-solid fa-dice-two fa-lg"></i>NT$690
-
+                    class="fa-li fa-solid fa-dice-two fa-lg"></i>夕遊海皇海牧+夜釣 (3-12歲)
 
                   
                   
                 
                 
                 
-                  <span>夕遊海皇海牧+夜釣 (3-12歲)
+                  <span>NT$500
+
+
 </span>
                   
                   
@@ -529,16 +536,15 @@
                 
 
                 <li class="mb-3 d-flex justify-content-between"><i
-                    class="fa-li fa-solid fa-dice-three fa-lg"></i>NT$500
-
-
+                    class="fa-li fa-solid fa-dice-three fa-lg"></i>夕遊海皇海牧+夜釣+海上賞花火
 
                   
                   
                 
                 
                 
-                  <span>夕遊海皇海牧+夜釣+海上賞花火
+                  <span>NT$790
+
 </span>
                   
                   
@@ -547,15 +553,15 @@
                 
 
                 <li class="mb-3 d-flex justify-content-between"><i
-                    class="fa-li fa-solid fa-dice-four fa-lg"></i>NT$790
-
+                    class="fa-li fa-solid fa-dice-four fa-lg"></i>夕遊海皇海牧+夜釣+海上賞花火(3-12歲)
 
                   
                   
                 
                 
                 
-                  <span>夕遊海皇海牧+夜釣+海上賞花火(3-12歲)
+                  <span>NT$550
+
 </span>
                   
                   
@@ -564,24 +570,8 @@
                 
 
                 <li class="mb-3 d-flex justify-content-between"><i
-                    class="fa-li fa-solid fa-dice-five fa-lg"></i>NT$550
+                    class="fa-li fa-solid fa-dice-five fa-lg"></i>加購BBQ (肉片,雞肉串,雞翅...等，固定份量)
 
-
-                  
-                  
-                
-                
-                
-                  <span>加購BBQ (肉片,雞肉串,雞翅...等，固定份量)
-</span>
-                  
-                  
-                
-                
-                
-
-                <li class="mb-3 d-flex justify-content-between"><i
-                    class="fa-li fa-solid fa-dice-six fa-lg"></i>
                   
                   
                 
@@ -597,7 +587,7 @@
                 
 
                 <li class="mb-3 d-flex justify-content-between"><i
-                    class="fa-li fa-solid fa-dice-one fa-lg"></i>未滿3歲
+                    class="fa-li fa-solid fa-dice-six fa-lg"></i>未滿3歲
 
                   
                   
@@ -758,6 +748,7 @@
 <script type="text/javascript" src="/assets/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/assets/js/plugins.js"></script>
 <script type="text/javascript" src="/assets/js/script.js"></script>
+
 
 
 
